@@ -4,19 +4,37 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
     <title>dibujando con canvas</title>
   </head>
   <body>
-    <h1>Dibujo con canvas</h1>
-    <style>
-      body {
-        background-color: #0475A1;
-      }
-      h1,
-      p {
-        color: rgb(248, 248, 248);
-      }
-    </style>
+    <h1>draw on canvas</h1>
+    <p>
+      ¿Cuántas lineas quieres?
+      <input
+        type="text"
+        class="placeh"
+        id="texto_lineas"
+        placeholder="Escribe el número de lineas"
+      />
+    </p>
+    <p>
+      ¿Qué color deseas usar?
+      <input type="color" id="color_lineas" /> o
+      <input
+        class="placeh"
+        type="text"
+        id="color_texto"
+        placeholder="Escribe el color en inglés"
+      />
+      <input class="push" type="button" value="A darle!" id="botoncito" />
+    </p>
+    <input type="button" value="Limpiar" id="actualizar" />
+    <p></p>
     <canvas id="dibujito" width="300" height="300"> </canvas>
     <p>Así queda tu Dibujo</p>
     <script src="dibujo.js"></script>

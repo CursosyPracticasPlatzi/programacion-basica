@@ -1,0 +1,58 @@
+* {
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: lemon;
+  src: url(LEMONMILK-Medium.otf) format("opentype");
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    #2c5364,
+    #203a43,
+    #0f2027
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+h1 {
+  color: #8da8b3;
+  font-family: lemon;
+}
+p {
+  font-family: "Roboto";
+  font-size: 13px;
+  font-weight: 300;
+  color: rgb(255, 255, 255);
+}
+input {
+  border: 1px solid #648594;
+  border-radius: 9px;
+  outline: none;
+  background: transparent;
+  font-family: "roboto";
+  font-weight: 300;
+  font-size: 11px;
+  color: #dff5ff;
+  padding: 4px 12px;
+  margin: 0 3px;
+}
+.push,
+#actualizar {
+  background: #648594;
+  color: #0f2027;
+}
+.push:hover,
+#actualizar:hover {
+  background: #8cadbb;
+  color: #0f2027;
+  transition: 0.1s;
+}
+.push:active {
+  background: #0f2027;
+  color: white;
+}
+.placeh::placeholder {
+  color: rgba(240, 255, 255, 0.37);
+  font-size: 10px;
+}
