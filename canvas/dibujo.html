@@ -31,11 +31,24 @@
         id="color_texto"
         placeholder="Escribe el color en inglés"
       />
-      <input class="push" type="button" value="A darle!" id="botoncito" />
     </p>
+    <label for=""
+      >¿Qué cuadrante quieres dibujar?
+      <input type="text" placeholder="Escribe la opción" id="opcion" />
+      <table>
+        <ol>
+          <li>cuadrante 1</li>
+          <li>cuadrante 2</li>
+          <li>cuadrante 3</li>
+          <li>cuadrante 4</li>
+        </ol>
+      </table>
+    </label>
+    <input class="push" type="button" value="A darle!" id="botoncito" />
     <input type="button" value="Limpiar" id="actualizar" />
-    <p></p>
-    <canvas id="dibujito" width="300" height="300"> </canvas>
+    <p>
+      <canvas id="dibujito" width="300" height="300"> </canvas>
+    </p>
     <p>Así queda tu Dibujo</p>
     <script src="dibujo.js"></script>
   </body>
