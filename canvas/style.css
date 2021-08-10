@@ -38,6 +38,13 @@ input {
   padding: 4px 12px;
   margin: 0 3px;
 }
+#size {
+  appearance: inherit;
+  padding: 0;
+}
+canvas {
+  background: #8da8b3;
+}
 .push,
 #actualizar {
   background: #648594;
