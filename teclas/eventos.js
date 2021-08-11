@@ -24,51 +24,56 @@ function dibujarLinea(color, xinicial, yinicial, xfinal, yfinal) {
   papel.closePath();
 }
 
-// document.addEventListener("keydown", dibujarTeclado);
-cuadrado.addEventListener("mousedown", pulsarMouse);
-cuadrado.addEventListener("mouseup", levantarMouse);
-cuadrado.addEventListener("mousemove", moverMouse);
+document.addEventListener("keydown", dibujarTeclado);
+// cuadrado.addEventListener("mousedown", pulsarMouse);
+// cuadrado.addEventListener("mouseup", levantarMouse);
+// cuadrado.addEventListener("mousemove", moverMouse);
 
-function pulsarMouse(evento) {
-  estado = 1;
-  x = evento.layerX;
-  y = evento.layerY;
-}
+// function pulsarMouse(evento) {
+//   estado = 1;
+//   x = evento.layerX;
+//   y = evento.layerY;
+// }
 
-function levantarMouse(evento) {
-  estado = 0;
-}
+// function levantarMouse(evento) {
+//   estado = 0;
+// }
 
-function moverMouse(evento) {
-  if (estado == 1) {
-    dibujarLinea(color.value, x, y, evento.layerX, evento.layerY);
-    x = evento.layerX;
-    y = evento.layerY;
-  } else {
-    x = evento.layerX;
-    y = evento.layerY;
-  }
-}
+// function moverMouse(evento) {
+//   if (estado == 1) {
+//     dibujarLinea(color.value, x, y, evento.layerX, evento.layerY);
+//     x = evento.layerX;
+//     y = evento.layerY;
+//   } else {
+//     x = evento.layerX;
+//     y = evento.layerY;
+//   }
+// }
+
+x = 150;
+y = 150;
 
 function dibujarTeclado(evento) {
   colorcito = "red";
-  movimiento = 1;
+  movimiento = 10;
   switch (evento.keyCode) {
     case teclas.UP:
-      dibujarLinea(colorcito, x, y, x, y - movimiento, papel);
+      dibujarLinea(color.value, x, y, x, y - movimiento, papel);
       y = y - movimiento;
       break;
     case teclas.RIGHT:
-      dibujarLinea(colorcito, x, y, x + movimiento, y, papel);
+      dibujarLinea(color.value, x, y, x + movimiento, y, papel);
       x = x + movimiento;
       break;
     case teclas.DOWN:
-      dibujarLinea(colorcito, x, y, x, y + movimiento, papel);
+      dibujarLinea(color.value, x, y, x, y + movimiento, papel);
       y = y + movimiento;
+      console.log(x);
       break;
     case teclas.LEFT:
-      dibujarLinea(colorcito, x, y, x - movimiento, y, papel);
+      dibujarLinea(color.value, x, y, x - movimiento, y, papel);
       x = x - movimiento;
       break;
   }
+  console.log(evento);
 }
