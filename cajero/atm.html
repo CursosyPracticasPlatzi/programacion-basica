@@ -5,17 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cajero automatico</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>
-      <img src="caja.jpg" alt="cajero" />
-    </p>
-    <p>
-      <input type="number" id="dinero" />
-      <input type="button" value="Extraer" id="extraer" />
-    </p>
-    <p id="resultado"></p>
-    <script src="cajero.js
+    <div class="container">
+      <div class="imgcaja">
+        <img src="img/caja.jpg" alt="cajero" />
+      </div>
+      <div class="datos">
+        <input type="number" id="dinero" />
+        <input type="button" value="Extraer" id="extraer" />
+        <div class="respuesta">
+          <p id="cajaInicial"></p>
+          <p id="resultado"></p>
+          <p id="resultadoImg"></p>
+        </div>
+      </div>
+      <script src="cajero.js
     "></script>
+    </div>
   </body>
 </html>
