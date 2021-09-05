@@ -1,0 +1,35 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);
+}
+.container {
+  text-align: center;
+}
+.container__titulo {
+  display: inline-block;
+  margin: 50px;
+}
+.container__juego {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 500px;
+  height: 500px;
+  border: 1px solid white;
+  border-radius: 10px;
+  margin: 0 auto;
+}
+.player1,
+.player2,
+.resultado {
+  display: flex;
+  flex-direction: column;
+  width: 120px;
+  height: 200px;
+  border: 1px solid white;
+  border-radius: 10px;
+}
